@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useRef } from "react";
+import "./assets/App.css";
+import { Route, Switch } from "react-router-dom";
+import Home from "./Pages/Home";
+import About from "./Pages/About";
+// import SingleRoom from "./Pages/SingleRoom";
+// import Error from "./Pages/Error";
+import Navbar from "./Components/Navbar";
+// import Services from "./Components/Services";
+// import FeaturedRooms from "./Components/FeaturedRooms";
+
+const offset = document.getElementById("inputref");
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const inputRef = useRef();
+    return (
+        <div id="inputref">
+            <Navbar ref={inputRef} offset={offset} />
+            <Switch>
+                <Route path="/" exact component={Home} />
+                <Route path="/about" exact component={About} />
+                {/* <Route path="/featured-rooms" exact component={FeaturedRooms} /> */}
+                {/* <Route path="/services" exact component={Services} /> */}
+                {/* <Route path="/rooms/:slug" exact component={SingleRoom} /> */}
+                {/* <Route component={Error} /> */}
+            </Switch>
+        </div>
+    );
 }
 
 export default App;

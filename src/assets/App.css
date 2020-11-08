@@ -1,0 +1,314 @@
+h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin-bottom: 0.7em;
+    margin-top: 10px;
+}
+h2 {
+    font-size: 2em;
+    margin-bottom: 0.75em;
+}
+h3 {
+    font-size: 1.5em;
+    line-height: 1;
+    margin-bottom: 1em;
+}
+h4 {
+    font-size: 1.2em;
+    line-height: 1.25;
+    margin-bottom: 1.25em;
+}
+h5 {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 1.5em;
+}
+h6 {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 1.5em;
+}
+body {
+    line-height: 26px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #777;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    /* background-color: #f9f9ff; */
+    height: 150vh;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.navbar-area {
+    background: transparent;
+    padding: 0 5rem;
+    border: 0;
+    border-radius: 0;
+    font-size: 2rem;
+    transition: background 0.4s, all 0.3s linear;
+    height: 120px;
+    margin-bottom: 90px;
+    margin-top: -50px;
+}
+.header_area .navbar {
+    background: transparent;
+    padding: 0px;
+    border: 0px;
+    border-radius: 0px;
+}
+.navbar-fixed {
+    position: fixed;
+    width: 100%;
+    top: -80px;
+    left: 0;
+    right: 0;
+    background: #f5f5f7;
+    transform: translateY(80px);
+    transition: transform 500ms ease, background 500ms ease;
+    -webkit-transition: transform 500ms ease, background 500ms ease;
+    box-shadow: 0px 3px 16px 0px rgba(49, 49, 49, 0.1);
+}
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    margin-top: -15px;
+}
+.navbar-nav {
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.nav-item,
+li {
+    font: 500 12px/100px "Roboto", sans-serif;
+    text-transform: uppercase;
+    color: #222;
+    display: inline-block;
+    display: block;
+    padding: 0.5rem 1rem;
+    list-style: none;
+    font-weight: 700;
+    margin: 10px 20px;
+}
+
+.navbar-brand {
+    display: inline-block;
+    padding-top: 2.2rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+    cursor: pointer;
+    font-weight: 800;
+}
+.navbar-brand:hover {
+    color: rgb(8, 8, 189);
+}
+
+a:hover {
+    color: rgb(8, 8, 189);
+}
+.navbar-brand:active {
+    color: rgb(1, 1, 99);
+}
+
+a:active {
+    color: rgb(1, 1, 99);
+}
+a {
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+    color: #222;
+}
+
+.Home {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 100px;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 100px;
+    margin-top: -140px;
+}
+.welcome-text {
+    max-width: 495px;
+    line-height: 24px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+.center {
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+}
+.fullWidth {
+    width: 100%;
+    text-align: center;
+    margin: 30px 0;
+}
+.bannerBtn {
+    padding: 0px 42px;
+    line-height: 50px;
+    background-image: linear-gradient(
+        to right,
+        #8490ff 0%,
+        #62bdfc 48%,
+        #8490ff 100%
+    );
+    background-size: 200% auto;
+    color: #fff;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.6s linear;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+}
+.bannerBtn:hover {
+    background-image: linear-gradient(
+        to right,
+        #6473ff 5%,
+        #85c9fa 48%,
+        #5263f8 80%
+    );
+}
+.bannerBtn:active {
+    background-image: linear-gradient(
+        to right,
+        #5c6bf7 0%,
+        #48aef7 48%,
+        #6574f8 100%
+    );
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.imgContainer {
+    height: 535px;
+    width: auto;
+}
+.work-item {
+    border: 2px solid #eee;
+    padding: 14px 25px;
+    border-radius: 5px;
+    margin: 10px;
+}
+.About {
+    height: 100vh;
+    display: flex;
+    grid-gap: 20px;
+    padding: 100px 150px;
+}
+.centerAbout {
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+}
+.textAbout {
+    font-size: 13px;
+    color: #777777;
+    position: relative;
+    margin-top: -10px;
+}
+.flexWrapper {
+    display: flex;
+}
+.tools_expert {
+    box-shadow: 0 8px 30px 0 rgba(29, 27, 27, 0.1);
+    padding: 10px 35px 35px 35px;
+    width: 100%;
+}
+#aboutPart {
+    box-shadow: 0 8px 30px 0 rgba(29, 27, 27, 0.1);
+    padding: 10px 45px 35px 45px;
+    width: 100%;
+}
+#partOne,
+#partTwo {
+    width: 50%;
+    margin-right: 20px;
+}
+.progress {
+    display: flex;
+    height: 1rem;
+    overflow: hidden;
+    font-size: 0.75rem;
+    background-color: #e9ecef;
+    border-radius: 0.25rem;
+    height: 20px;
+    border-radius: 10px;
+    background: transparent;
+    border: 1px solid #eee;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-shadow: 0 20px 20px 0 rgba(132, 144, 255, 0.2);
+}
+.progress-bar {
+    width: 0%;
+    height: 10px;
+    border-radius: 5px;
+    vertical-align: middle;
+    align-self: center;
+    background: linear-gradient(0deg, #4a5cfa 0%, #62bdfc 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    transition: width 0.6s ease;
+}
+#react,
+#bootstrap {
+    width: 80%;
+}
+.text {
+    text-align: right;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    color: #777;
+    margin-bottom: 15px;
+}
+#javascript {
+    width: 85%;
+}
+#html {
+    width: 99%;
+}
+#CSS {
+    width: 95%;
+}
+#git {
+    width: 90%;
+}
+#Backend {
+    width: 35%;
+}
