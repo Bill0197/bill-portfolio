@@ -30,32 +30,28 @@ export default function About({ display }) {
                         </div>
                         <div className="flexWrapper">
                             <div className="work-item">
-                                <p>
-                                    <StatusOnlineIcon />
-                                </p>
-                                <h5>7 </h5>
+                                <StatusOnlineIcon />
+                                <p>7 </p>
                                 <p>Total Courses </p>
                             </div>
                             <div className="work-item">
-                                <p>
-                                    <TasklistIcon />
-                                </p>
-                                <h5>15 </h5>
+                                <TasklistIcon />
+                                <p>15 </p>
                                 <p>Total Projects</p>
                             </div>
                             <div className="work-item">
-                                <p>
-                                    <GroupsIcon />
-                                </p>
-                                <h5>5 </h5>
+                                <GroupsIcon />
+                                <p>5 </p>
                                 <p>Total Volunteers</p>
                             </div>
                         </div>
+                        <br />
+                        <hr />
                     </div>
                 </div>
                 <div id="partTwo">
                     <div className="tools_expert">
-                        <h5>SKILLS EXPERTNESS</h5>
+                        <h4>SKILLS EXPERTNESS</h4>
                         <p className="text">React.js &#10139; 80%</p>
                         <div className="progress">
                             <div

@@ -6,11 +6,11 @@ import About from "./About";
 export default function Home() {
     return (
         <>
-            <section className="Home">
+            <section id="Home" className="Home">
                 <div>
                     <img className="imgContainer" src={myPic} alt="my pic" />
                 </div>
-                <div>
+                <div className="aboutPartTwo">
                     <p>This is me</p>
                     <h1>
                         SAYDULLAEV <br /> KHABIBULLO

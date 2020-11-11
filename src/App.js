@@ -6,7 +6,7 @@ import About from "./Pages/About";
 // import SingleRoom from "./Pages/SingleRoom";
 // import Error from "./Pages/Error";
 import Navbar from "./Components/Navbar";
-// import Services from "./Components/Services";
+import Services from "./Pages/Services";
 // import FeaturedRooms from "./Components/FeaturedRooms";
 
 const offset = document.getElementById("inputref");
@@ -19,8 +19,7 @@ function App() {
             <Switch>
                 <Route path="/" exact component={Home} />
                 <Route path="/about" exact component={About} />
-                {/* <Route path="/featured-rooms" exact component={FeaturedRooms} /> */}
-                {/* <Route path="/services" exact component={Services} /> */}
+                <Route path="/services" exact component={Services} />
                 {/* <Route path="/rooms/:slug" exact component={SingleRoom} /> */}
                 {/* <Route component={Error} /> */}
             </Switch>
