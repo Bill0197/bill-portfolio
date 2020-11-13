@@ -2,6 +2,8 @@ import React from "react";
 import myPic from "../assets/hojibobo-removebg.png";
 import { Link } from "react-router-dom";
 import About from "./About";
+import Footer from "../Components/Footer";
+import Portfolio from "../Components/Portfolio";
 
 export default function Home() {
     return (
@@ -23,6 +25,8 @@ export default function Home() {
                 </div>
             </section>
             <About display="true" />
+            <Portfolio display="true" />
+            <Footer />
         </>
     );
 }

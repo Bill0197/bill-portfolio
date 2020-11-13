@@ -1,12 +1,8 @@
 import React from "react";
-import {
-    NetworkIcon,
-    GroupsIcon,
-    TasklistIcon,
-    StatusOnlineIcon,
-} from "../Styles/Styles";
+import { GroupsIcon, TasklistIcon, StatusOnlineIcon } from "../Styles/Styles";
 import GenericHeader from "../Components/GenericHeader";
 import { Link } from "react-router-dom";
+import Footer from "../Components/Footer";
 
 export default function About({ display }) {
     return (
@@ -139,6 +135,7 @@ export default function About({ display }) {
                     </Link>
                 </div>
             )}
+           { !display && <Footer /> }
         </>
     );
 }

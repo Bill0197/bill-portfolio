@@ -69,14 +69,9 @@ export default function Navbar({ offset }) {
                             SERVICES
                         </Link>
                     </li>
-                    <li className="nav-item">
-                        <Link className="nav-item" to="/pages">
-                            PAGES
-                        </Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="nav-item" to="/blog">
-                            BLOG
+                    <li className="nav-item" id="pagesHover">
+                        <Link className="nav-item" to="/portfolio">
+                            PORTFOLIO
                         </Link>
                     </li>
                     <li className="nav-item">

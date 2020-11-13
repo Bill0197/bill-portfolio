@@ -8,6 +8,7 @@ import {
     HighQualityIcon,
 } from "../Styles/Styles";
 import { Link } from "react-router-dom";
+import Footer from "../Components/Footer";
 
 export default function Services({ display }) {
     return (
@@ -39,27 +40,27 @@ export default function Services({ display }) {
                     <Feature>
                         <SatisfiedIcon />
                         <h4>Satisfaction</h4>
-                        If you are looking at blank cence in price. You may
-                        see some for as low as $17 each.
+                        If you are looking at blank cence in price. You may see
+                        some for as low as $17 each.
                     </Feature>
                     <Feature>
                         <HighQualityIcon />
                         <h4>High Quality</h4>
-                        If you are looking at blank cassettes
-                        see some for as low as $17 each.
+                        If you are looking at blank cassettes see some for as
+                        low as $17 each.
                     </Feature>
                 </div>
             </section>
             <div>
-
-            {!display && (
-                <div className="fullWidth">
-                    <Link to="/" className="center bannerBtn">
-                        back to home
-                    </Link>
-                </div>
-            )}
+                {!display && (
+                    <div className="fullWidth">
+                        <Link to="/" className="center bannerBtn">
+                            back to home
+                        </Link>
+                    </div>
+                )}
             </div>
+            {!display && <Footer />}
         </>
     );
 }

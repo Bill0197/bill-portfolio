@@ -8,7 +8,73 @@ import { Fastly } from "@styled-icons/simple-icons/Fastly";
 import { Percent } from "@styled-icons/remix-line/Percent";
 import { SentimentSatisfiedAlt } from "@styled-icons/material-sharp/SentimentSatisfiedAlt";
 import { HighQuality } from "@styled-icons/material-outlined/HighQuality";
+import { FacebookF } from "@styled-icons/fa-brands/FacebookF";
+import { Instagram } from "@styled-icons/boxicons-logos/Instagram";
+import { Github } from "@styled-icons/boxicons-logos/Github";
+import { Telegram } from "@styled-icons/simple-icons/Telegram";
 
+export const Fb = styled(FacebookF)`
+    height: 31px;
+    cursor: pointer;
+    color: #8490ff;
+    margin-right: 2rem;
+    :hover {
+        color: #5a6afa;
+    }
+    :active {
+        color: #2e43fa;
+    }
+`;
+export const Insta = styled(Instagram)`
+    height: 31px;
+    cursor: pointer;
+
+    color: #8490ff;
+    margin: 0 2rem;
+    :hover {
+        color: #5a6afa;
+    }
+    :active {
+        color: #2e43fa;
+    }
+`;
+export const Git = styled(Github)`
+    height: 31px;
+    cursor: pointer;
+    color: #8490ff;
+    margin: 0 2rem;
+    :hover {
+        color: #5a6afa;
+    }
+    :active {
+        color: #2e43fa;
+    }
+`;
+export const Tg = styled(Telegram)`
+    height: 31px;
+    cursor: pointer;
+    color: #8490ff;
+    margin: 0 2rem;
+    :hover {
+        color: #5a6afa;
+    }
+    :active {
+        color: #2e43fa;
+    }
+`;
+export const WrapperIcon = styled.div`
+    position: absolute;
+    right: 3rem;
+    margin-top: 4.5em;
+    @media (max-width: 576px) {
+        .gDQikt {
+            margin-right: 0;
+        }
+        svg {
+            margin: 0 0.6em;
+        }
+    }
+`;
 export const NetworkIcon = styled(Network)`
     height: 18px;
     color: #8490ff;
@@ -33,6 +99,7 @@ export const Wrapper = styled.span`
         }
     }
 `;
+
 export const NavIcon = styled(Navicon)`
     height: 40px;
     color: #7987ff;
@@ -88,4 +155,18 @@ export const HighQualityIcon = styled(HighQuality)`
     height: 2.3rem;
     margin-top: -1.4rem;
     color: #8490ff;
+`;
+export const FooterStyle = styled.div`
+    background: #000410;
+    color: #fff;
+    margin-top: 2rem;
+    margin-left: -0.5rem;
+    width: 103%;
+    overflow: hidden;
+    position: relative;
+    bottom: -0.5rem;
+    height: 25vh;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
 `;
