@@ -26,28 +26,28 @@ export default function Services({ display }) {
                     <Feature>
                         <FastlyIcon />
                         <h4>Consistency</h4>
-                        If you are looking at blank cassettes on the web, you
-                        may be very confused at the difference in price. You may
-                        see some for as low as $17 each.
+                        Customers expect consistency in the quality of service
+                        they receive. So, the number one thing I will make sure
+                        is the consistency.
                     </Feature>
                     <Feature>
                         <PercentIcon />
                         <h4>Accuracy</h4>
-                        If you are looking at blank cassettes on the web, you
-                        may be very confused at the difference in price. You may
-                        see some for as low as $17 each.
+                        The foregoing editorial accurately sums up the attitude
+                        of the profession. The service I would like to give you
+                        is with 100% full accuracy.
                     </Feature>
                     <Feature>
                         <SatisfiedIcon />
                         <h4>Satisfaction</h4>
-                        If you are looking at blank cence in price. You may see
-                        some for as low as $17 each.
+                        We don't always get satisfied with services we get.
+                        Therefore, you will be satisfied with the service you
+                        are provided with.
                     </Feature>
                     <Feature>
                         <HighQualityIcon />
-                        <h4>High Quality</h4>
-                        If you are looking at blank cassettes see some for as
-                        low as $17 each.
+                        <h4>High Quality</h4>We will make sure the product you get is of
+                        high quality and is not expensive either. So, you can trust us without a doubt.
                     </Feature>
                 </div>
             </section>

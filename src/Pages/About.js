@@ -10,8 +10,8 @@ export default function About({ display }) {
             {!display && <GenericHeader title="About Me" page="About Me" />}
             <section className="About">
                 <div id="partOne">
-                    <div id="aboutPart">
-                        <h3>About myself</h3>
+                    <div id="aboutPart" className="py-4">
+                        <h3 className="py-2">About myself</h3>
                         <p> Hi, I’m Khabibullo. Nice to meet you.</p>
                         <div className="welcome-text">
                             I like to code things from scratch, and enjoy
@@ -41,85 +41,83 @@ export default function About({ display }) {
                                 <p>Total Volunteers</p>
                             </div>
                         </div>
-                        <br />
-                        <hr />
                     </div>
                 </div>
                 <div id="partTwo">
-                    <div className="tools_expert">
-                        <h4>SKILLS EXPERTNESS</h4>
+                    <div className="toolsExpert">
+                        <h4 className="p-4">SKILLS EXPERTNESS</h4>
                         <p className="text">React.js &#10139; 80%</p>
-                        <div className="progress">
+                        <div className="Progress">
                             <div
                                 id="react"
-                                className="progress-bar"
-                                role="progressbar"
+                                className="Progress-bar"
+                                role="Progressbar"
                                 aria-valuenow="80"
                                 aria-valuemin="0"
                                 aria-valuemax="100"
                             ></div>
                         </div>
                         <p className="text">JavaScript &#10139; 85%</p>
-                        <div className="progress">
+                        <div className="Progress">
                             <div
                                 id="javascript"
-                                className="progress-bar"
-                                role="progressbar"
+                                className="Progress-bar"
+                                role="Progressbar"
                                 aria-valuenow="85"
                                 aria-valuemin="0"
                                 aria-valuemax="100"
                             ></div>
                         </div>
                         <p className="text">MERN stack &#10139; 35%</p>
-                        <div className="progress">
+                        <div className="Progress">
                             <div
                                 id="Backend"
-                                className="progress-bar"
-                                role="progressbar"
+                                className="Progress-bar"
+                                role="Progressbar"
                                 aria-valuenow="35"
                                 aria-valuemin="0"
                                 aria-valuemax="100"
                             ></div>
                         </div>
                         <p className="text">Git &#10139; 90%</p>
-                        <div className="progress">
+                        <div className="Progress">
                             <div
                                 id="git"
-                                className="progress-bar"
-                                role="progressbar"
+                                className="Progress-bar"
+                                role="Progressbar"
                                 aria-valuenow="95"
                                 aria-valuemin="0"
                                 aria-valuemax="100"
                             ></div>
                         </div>
                         <p className="text">Html5 &#10139; 99%</p>
-                        <div className="progress">
+                        <div className="Progress">
                             <div
                                 id="html"
-                                className="progress-bar"
-                                role="progressbar"
+                                className="Progress-bar"
+                                role="Progressbar"
                                 aria-valuenow="99"
                                 aria-valuemin="0"
                                 aria-valuemax="100"
                             ></div>
                         </div>
                         <p className="text">Css3 &#10139; 95%</p>
-                        <div className="progress">
+                        <div className="Progress">
                             <div
                                 id="CSS"
-                                className="progress-bar"
-                                role="progressbar"
+                                className="Progress-bar"
+                                role="Progressbar"
                                 aria-valuenow="95"
                                 aria-valuemin="0"
                                 aria-valuemax="100"
                             ></div>
                         </div>
                         <p className="text">Bootstrap &#10139; 80%</p>
-                        <div className="progress">
+                        <div className="Progress">
                             <div
                                 id="bootstrap"
-                                className="progress-bar"
-                                role="progressbar"
+                                className="Progress-bar"
+                                role="Progressbar"
                                 aria-valuenow="80"
                                 aria-valuemin="0"
                                 aria-valuemax="100"
@@ -135,7 +133,7 @@ export default function About({ display }) {
                     </Link>
                 </div>
             )}
-           { !display && <Footer /> }
+            {!display && <Footer />}
         </>
     );
 }

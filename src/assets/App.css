@@ -33,9 +33,9 @@ h6 {
 ::after,
 ::before {
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif !important;
 }
-.navbar-area {
+.navbarArea {
     border: 0;
     border-radius: 0;
     transition: background 3s linear;
@@ -43,7 +43,8 @@ h6 {
     width: 100%;
     left: 0;
     right: 0;
-    top: -1rem;
+    top: -2rem;
+    margin-bottom: -3rem;
     box-shadow: 0px 3px 16px 0px rgba(49, 49, 49, 0.1);
     z-index: 100;
 }
@@ -61,11 +62,9 @@ h6 {
     margin-right: 10px;
 }
 
-.navbar-fixed {
-    /* position: fixed; */
+.navbarFixed {
     padding-top: 6rem;
     background: #f5f5f7;
-    /* transform: translateY(1rem); */
     transition: background 600ms linear;
     box-shadow: 0 16px 26px 0px rgba(49, 49, 49, 0.1);
 }
@@ -85,12 +84,12 @@ a:active {
     color: rgb(1, 1, 99);
 }
 a {
-    text-decoration: none;
+    text-decoration: none !important;
     background-color: transparent;
     color: #222;
 }
 
-.nav-item,
+.navItem,
 li {
     font: 500 14px/100px "Poppins", "sans-serif";
     text-transform: uppercase;
@@ -103,7 +102,7 @@ li {
     margin: 0 5px;
 }
 
-.navbar-nav {
+.navbarNav {
     position: fixed;
     top: -2.48rem;
     right: 3rem;
@@ -227,7 +226,7 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
-.tools_expert {
+.toolsExpert {
     padding: 10px 35px 35px 35px;
     margin: 2rem;
     border-radius: 20px;
@@ -265,18 +264,18 @@ h5 {
     margin-bottom: 1.5em;
 }
 h6 {
-    font-size: 1em;
-    font-weight: bold;
-    margin-bottom: 1.5em;
+    font-size: 1em !important;
+    font-weight: bold !important;
+    margin-bottom: 1.5em !important;
 }
 
 *,
 ::after,
 ::before {
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    box-sizing: border-box !important;
+    font-family: "Poppins", sans-serif !important;
 }
-.navbar-area {
+.navbarArea {
     border: 0;
     border-radius: 0;
     transition: background 3s linear;
@@ -284,7 +283,7 @@ h6 {
     width: 100%;
     left: 0;
     right: 0;
-    top: -1rem;
+    top: -2rem;
     box-shadow: 0px 3px 16px 0px rgba(49, 49, 49, 0.1);
     z-index: 100;
 }
@@ -302,7 +301,7 @@ h6 {
     margin-right: 10px;
 }
 
-.navbar-fixed {
+.navbarFixed {
     /* position: fixed; */
     padding-top: 6rem;
     background: #f5f5f7;
@@ -331,7 +330,7 @@ a {
     color: #222;
 }
 
-.nav-item,
+.navItem,
 li {
     font: 500 14px/100px "Poppins", "sans-serif";
     text-transform: uppercase;
@@ -344,7 +343,7 @@ li {
     margin: 0 5px;
 }
 
-.navbar-nav {
+.navbarNav {
     position: fixed;
     top: -2.48rem;
     right: 3rem;
@@ -469,7 +468,7 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
-.tools_expert {
+.toolsExpert {
     padding: 10px 35px 35px 35px;
     margin: 2rem;
     border-radius: 20px;
@@ -486,7 +485,7 @@ body {
         flex-direction: column;
         padding: 0;
     }
-    .tools_expert {
+    .toolsExpert {
         width: 180%;
     }
     #aboutPart {
@@ -499,7 +498,7 @@ body {
     width: 50%;
     margin-right: 20px;
 }
-.progress {
+.Progress {
     display: flex;
     height: 1rem;
     overflow: hidden;
@@ -514,7 +513,7 @@ body {
     padding-right: 5px;
     box-shadow: 0 10px 10px rgba(43, 18, 134, 0.2);
 }
-.progress-bar {
+.Progress-bar {
     width: 0%;
     height: 10px;
     border-radius: 5px;
@@ -533,14 +532,7 @@ body {
 #bootstrap {
     width: 80%;
 }
-.text {
-    text-align: right;
-    font-size: 14px;
-    font-family: "Poppins", "sans-serif";
-    font-weight: normal;
-    color: #777;
-    margin-bottom: 15px;
-}
+
 #javascript {
     width: 85%;
 }
@@ -606,7 +598,7 @@ body {
     .imgContainer {
         height: 300px;
     }
-    .navbar-nav {
+    .navbarNav {
         flex-direction: column;
         background: #fff;
         position: absolute;
@@ -616,27 +608,27 @@ body {
         color: white;
         box-shadow: 0px 10px 30px 0px rgba(8, 8, 8, 0.4);
     }
-    .nav-item {
+    .navItem {
         padding: 0 10px;
         margin: 0;
         width: 100%;
         line-height: 30px;
         color: #222222;
     }
-    .nav-item:hover {
+    .navItem:hover {
         background: #8490ff;
         color: #fff;
     }
-    .nav-item:active {
+    .navItem:active {
         color: rgb(56, 56, 56);
     }
-    .nav-item:first-of-type:hover {
+    .navItem:first-of-type:hover {
         background: #8490ff;
         border-top-right-radius: 12px;
         border-top-left-radius: 12px;
     }
 
-    .nav-item:last-of-type:hover {
+    .navItem:last-of-type:hover {
         background: #8490ff;
         border-bottom-right-radius: 12px;
         border-bottom-left-radius: 12px;
@@ -644,10 +636,10 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-    .nav-item {
+    .navItem {
         padding: 0.12rem 1rem;
     }
-    .tools_expert,
+    .toolsExpert,
     #aboutPart {
         width: 170%;
     }
@@ -658,7 +650,7 @@ body {
     }
 }
 @media screen and (max-width: 388px) {
-    .tools_expert,
+    .toolsExpert,
     #aboutPart {
         width: 160%;
     }
@@ -669,7 +661,7 @@ body {
         flex-direction: column;
         padding: 0;
     }
-    .tools_expert {
+    .toolsExpert {
         width: 180%;
     }
     #aboutPart {
@@ -682,7 +674,7 @@ body {
     width: 50%;
     margin-right: 20px;
 }
-.progress {
+.Progress {
     display: flex;
     height: 1rem;
     overflow: hidden;
@@ -697,7 +689,7 @@ body {
     padding-right: 5px;
     box-shadow: 0 10px 10px rgba(43, 18, 134, 0.2);
 }
-.progress-bar {
+.Progress-bar {
     width: 0%;
     height: 10px;
     border-radius: 5px;
@@ -719,11 +711,12 @@ body {
 .text {
     text-align: right;
     font-size: 14px;
-    font-family: "Poppins", "sans-serif";
+    font-family: "Poppins", "sans-serif" !important;
     font-weight: normal;
     color: #777;
     margin-bottom: 15px;
 }
+
 #javascript {
     width: 85%;
 }
@@ -880,7 +873,21 @@ a {
 .portfolio {
     margin-top: 7rem;
 }
+.linkWrapper {
+    color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 5rem;
+    margin: 3rem 2rem;
+    padding: 4rem;
+    justify-content: center;
+}
 
+.marginRigth {
+    display: inline-block;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
 @media screen and (max-width: 670px) {
     .imgPortf {
         width: 400px;
@@ -925,6 +932,26 @@ a {
         font-size: 0.8rem;
     }
 }
+.black {
+    color: rgb(69, 53, 243);
+}
+.half {
+    max-width: 100%;
+}
+.biggerImgForWbba {
+    width: 100%;
+    border: 3px solid rgb(221, 219, 219);
+    height: auto;
+    border-radius: 16px;
+    transition: all 0.3s linear;
+    box-shadow: 0 8px 18px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
 @media screen and (max-width: 420px) {
     .imgPortf {
         width: 200px;
@@ -967,7 +994,7 @@ a {
     .imgContainer {
         height: 300px;
     }
-    .navbar-nav {
+    .navbarNav {
         flex-direction: column;
         background: #fff;
         position: absolute;
@@ -977,27 +1004,27 @@ a {
         color: white;
         box-shadow: 0px 10px 30px 0px rgba(8, 8, 8, 0.4);
     }
-    .nav-item {
+    .navItem {
         padding: 0 10px;
         margin: 0;
         width: 100%;
         line-height: 30px;
         color: #222222;
     }
-    .nav-item:hover {
+    .navItem:hover {
         background: #8490ff;
         color: #fff;
     }
-    .nav-item:active {
+    .navItem:active {
         color: rgb(56, 56, 56);
     }
-    .nav-item:first-of-type:hover {
+    .navItem:first-of-type:hover {
         background: #8490ff;
         border-top-right-radius: 12px;
         border-top-left-radius: 12px;
     }
 
-    .nav-item:last-of-type:hover {
+    .navItem:last-of-type:hover {
         background: #8490ff;
         border-bottom-right-radius: 12px;
         border-bottom-left-radius: 12px;
@@ -1005,10 +1032,10 @@ a {
 }
 
 @media screen and (max-width: 500px) {
-    .nav-item {
+    .navItem {
         padding: 0.12rem 1rem;
     }
-    .tools_expert,
+    .toolsExpert,
     #aboutPart {
         width: 170%;
     }
@@ -1019,7 +1046,7 @@ a {
     }
 }
 @media screen and (max-width: 388px) {
-    .tools_expert,
+    .toolsExpert,
     #aboutPart {
         width: 160%;
     }

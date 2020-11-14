@@ -105,7 +105,7 @@ export const NavIcon = styled(Navicon)`
     color: #7987ff;
     position: absolute;
     right: 1rem;
-    top: 2rem;
+    top: 2.5rem;
     cursor: pointer;
     display: none;
     :hover {

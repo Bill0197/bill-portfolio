@@ -6,9 +6,17 @@ export default function Navbar({ offset }) {
     const [state, setState] = useState(false);
     const [show, setShow] = useState(false);
 
-    const handleClick = () => {
-        setTimeout(() => setShow(!show), 120);
-        clearTimeout();
+    const handleClick = ({ target }) => {
+        let icon = document.getElementById("toggleIcon");
+        console.log(icon.children);
+        setTimeout(() => {
+            if (target === icon || icon.hasChildNodes) {
+                setShow(!show);
+                clearTimeout();
+            } else {
+                setShow(true);
+            }
+        }, 120);
     };
 
     window.onscroll = function () {
@@ -22,69 +30,68 @@ export default function Navbar({ offset }) {
             setState(false);
         }
     }
-    // useEffect(() => {
-    //     const reff = document.getElementById("inputref");
-    //     const toggle = document.querySelector(".toggle");
-    //     reff.onclick = () => {
-    //         if (reff.hasChildNodes(toggle)) {
-    //             if (show) {
-    //                 setShow(!show);
-    //             }
-    //         } else {
-    //             if (!show) {
-    //                 setShow(show);
-    //             }
-    //         }
-    //     };
-    // }, []);
+    useEffect(() => {
+        const reff = document.getElementById("inputref");
+        const toggle = document.querySelector(".toggle");
+        let inputRef = document.querySelector("#inputref");
+        inputRef.addEventListener("click", handleClick);
+        reff.onclick = () => {
+            if (reff.hasChildNodes(toggle)) {
+                if (show) {
+                    setShow(!show);
+                }
+            } else {
+                if (!show) {
+                    setShow(show);
+                }
+            }
+        };
+    }, []);
     return (
-        <nav className={state ? "navbar-area navbar-fixed" : "navbar-area"}>
+        <nav className={state ? "navbarArea navbarFixed" : "navbarArea"}>
             <Link to="/">
                 <li className="navbar-brand">Saydullaev</li>
             </Link>
-            <div className="navbar">
-                <ul
-                    className="navbar-nav"
-                    style={{
-                        transition: "display .3s linear",
-                        display:
-                            show && window.innerWidth < 930 ? "none" : "flex",
-                    }}
-                    ref={(node) => {
-                        node = node;
-                    }}
-                >
-                    <li className="nav-item">
-                        <Link className="nav-item" to="/">
-                            Home
-                        </Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="nav-item" to="/about">
-                            ABOUT
-                        </Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="nav-item" to="/services">
-                            SERVICES
-                        </Link>
-                    </li>
-                    <li className="nav-item" id="pagesHover">
-                        <Link className="nav-item" to="/portfolio">
-                            PORTFOLIO
-                        </Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="nav-item" to="/contact">
-                            CONTACT
-                        </Link>
-                    </li>
-                </ul>
-                <div className="toggle">
-                    <Wrapper>
-                        <NavIcon onClick={handleClick} id="toggleIcon" />
-                    </Wrapper>
-                </div>
+            <ul
+                className="navbarNav"
+                style={{
+                    transition: "display .3s linear",
+                    display: show && window.innerWidth < 930 ? "none" : "flex",
+                }}
+                ref={(node) => {
+                    node = node;
+                }}
+            >
+                <li className="navItem">
+                    <Link className="navItem" to="/">
+                        Home
+                    </Link>
+                </li>
+                <li className="navItem">
+                    <Link className="navItem" to="/about">
+                        ABOUT
+                    </Link>
+                </li>
+                <li className="navItem">
+                    <Link className="navItem" to="/services">
+                        SERVICES
+                    </Link>
+                </li>
+                <li className="navItem" id="pagesHover">
+                    <Link className="navItem" to="/portfolio">
+                        PORTFOLIO
+                    </Link>
+                </li>
+                <li className="navItem">
+                    <Link className="navItem" to="/contact">
+                        CONTACT
+                    </Link>
+                </li>
+            </ul>
+            <div className="toggle">
+                <Wrapper>
+                    <NavIcon onClick={handleClick} id="toggleIcon" />
+                </Wrapper>
             </div>
         </nav>
     );
