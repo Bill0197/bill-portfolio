@@ -1,14 +1,13 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { NavIcon, Wrapper } from "../Styles/Styles";
 
-export default function Navbar({ offset }) {
+export default function Navbar({ offset, forwardRef }) {
     const [state, setState] = useState(false);
     const [show, setShow] = useState(false);
 
     const handleClick = ({ target }) => {
         let icon = document.getElementById("toggleIcon");
-        console.log(icon.children);
         setTimeout(() => {
             if (target === icon || icon.hasChildNodes) {
                 setShow(!show);
