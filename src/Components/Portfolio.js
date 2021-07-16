@@ -31,7 +31,12 @@ export default function Portfolio({ display }) {
           <h3>MY RECENT COMPLETED PROJECTS</h3>
           {links.map(l => (
             <div style={{ marginBottom: '10px' }} key={l.link}>
-              <a href={l.link} target="_blank" rel="noopener noreferrer">
+              <a
+                href={l.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: '#000' }}
+              >
                 {l.name}
               </a>
             </div>
