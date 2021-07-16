@@ -35,7 +35,7 @@ export default function Portfolio({ display }) {
                 href={l.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ color: '#000' }}
+                style={{ color: 'rgb(101 74 207)' }}
               >
                 {l.name}
               </a>
