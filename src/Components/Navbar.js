@@ -68,7 +68,7 @@ export default function Navbar({ offset }) {
 
   return (
     <nav className={state ? 'navbarArea navbarFixed' : 'navbarArea'}>
-      <NavLink exact activeStyle={activeStyles} to="/#">
+      <NavLink exact activeStyle={activeStyles} to="/">
         <li className="navbar-brand">Saydullaev</li>
       </NavLink>
       <ul
@@ -82,7 +82,7 @@ export default function Navbar({ offset }) {
         }}
       >
         <li className="navItem">
-          <NavLink exact activeStyle={activeStyles} className="navItem" to="/#">
+          <NavLink exact activeStyle={activeStyles} className="navItem" to="/">
             Home
           </NavLink>
         </li>
@@ -91,7 +91,7 @@ export default function Navbar({ offset }) {
             exact
             activeStyle={activeStyles}
             className="navItem"
-            to="/#about"
+            to="/about"
           >
             ABOUT
           </NavLink>
@@ -100,7 +100,7 @@ export default function Navbar({ offset }) {
           <NavLink
             activeStyle={activeStyles}
             className="navItem"
-            to="/#services"
+            to="/services"
           >
             SERVICES
           </NavLink>
@@ -109,7 +109,7 @@ export default function Navbar({ offset }) {
           <NavLink
             activeStyle={activeStyles}
             className="navItem"
-            to="/#portfolio"
+            to="/portfolio"
           >
             PORTFOLIO
           </NavLink>
@@ -119,7 +119,7 @@ export default function Navbar({ offset }) {
             exact
             activeStyle={activeStyles}
             className="navItem"
-            to="/#contact"
+            to="/contact"
           >
             CONTACT
           </NavLink>

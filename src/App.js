@@ -20,15 +20,15 @@ function App({ forwardRef }) {
     <div id="inputref">
       <Navbar refs={inputRef} offset={offset} />
       <Switch>
-        <Route path="/#" exact component={Home} />
-        <Route path="/#about" exact component={About} />
-        <Route path="/#services" exact component={Services} />
-        <Route path="/#contact" exact component={Contact} />
-        <Route path="/#portfolio" exact component={Portfolio} />
-        <Route path="/#portfolio/hotel" exact component={Hotel} />
-        <Route path="/#portfolio/webbrain" exact component={Webbrain} />
-        <Route path="/#portfolio/budget" exact component={Budget} />
-        <Route path="/#portfolio/bootstrap" exact component={Bootstrap} />
+        <Route path="/" exact component={Home} />
+        <Route path="/about" exact component={About} />
+        <Route path="/services" exact component={Services} />
+        <Route path="/contact" exact component={Contact} />
+        <Route path="/portfolio" exact component={Portfolio} />
+        <Route path="/portfolio/hotel" exact component={Hotel} />
+        <Route path="/portfolio/webbrain" exact component={Webbrain} />
+        <Route path="/portfolio/budget" exact component={Budget} />
+        <Route path="/portfolio/bootstrap" exact component={Bootstrap} />
       </Switch>
     </div>
   )
