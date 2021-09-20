@@ -8,7 +8,12 @@ import Budget from '../assets/portfolio/budget.PNG'
 import { Link } from 'react-router-dom'
 
 const links = [
+  {
+    link: 'https://dashboard.trailer-test.nightwell-logistics.com/',
+    name: 'Trailer Prime',
+  },
   { link: 'https://loadfetcher.com/', name: 'loadfetcher' },
+  { link: 'https://borbaraka.netlify.app/', name: 'borbaraka' },
   { link: 'https://rapidboard-q3tidrazma-uk.a.run.app/', name: 'rapidboard' },
   { link: 'https://wbba.netlify.app/', name: 'web brain design' },
   { link: 'https://bill-hotel-site.netlify.app/', name: 'hotel rooms' },
@@ -20,7 +25,7 @@ const links = [
     link: 'https://chat-app-socket-io.netlify.app/',
     name: 'simple socket chat app',
   },
-]
+];
 
 export default function Portfolio({ display }) {
   return (
