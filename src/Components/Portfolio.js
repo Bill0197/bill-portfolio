@@ -1,11 +1,11 @@
-import React from 'react'
-import GenericHeader from './GenericHeader'
-import Footer from './Footer'
-import Hotel from '../assets/portfolio/hotel.PNG'
-import Webbrain from '../assets/portfolio/webbrain.PNG'
-import Bootstrap from '../assets/portfolio/bootstrap.PNG'
-import Budget from '../assets/portfolio/budget.PNG'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import GenericHeader from './GenericHeader';
+import Footer from './Footer';
+import Hotel from '../assets/portfolio/hotel.PNG';
+import Webbrain from '../assets/portfolio/webbrain.PNG';
+import Bootstrap from '../assets/portfolio/bootstrap.PNG';
+import Budget from '../assets/portfolio/budget.PNG';
+import { Link } from 'react-router-dom';
 
 const links = [
   {
@@ -30,16 +30,16 @@ const links = [
 export default function Portfolio({ display }) {
   return (
     <>
-      {!display && <GenericHeader title="PORTFOLIO" page="Portfolio " />}
-      <section id="portfolio" className="center">
-        <div className="portfolio">
+      {!display && <GenericHeader title='PORTFOLIO' page='Portfolio ' />}
+      <section id='portfolio' className='center'>
+        <div className='portfolio'>
           <h3>MY RECENT COMPLETED PROJECTS</h3>
-          {links.map(l => (
+          {links.map((l) => (
             <div style={{ marginBottom: '10px' }} key={l.link}>
               <a
                 href={l.link}
-                target="_blank"
-                rel="noopener noreferrer"
+                target='_blank'
+                rel='noopener noreferrer'
                 style={{ color: 'rgb(101 74 207)' }}
               >
                 {l.name}
@@ -56,117 +56,117 @@ export default function Portfolio({ display }) {
           <p>3. Bootstrap Portfolio </p>
           <p>4. Budget App </p>
         </div>
-        <div className="imgWrapper">
-          <div className="imgParent">
+        <div className='imgWrapper'>
+          <div className='imgParent'>
             <a
-              className="displayWebsite portfolioBtn biggerFont"
-              target="blank"
-              href="https://wbba.netlify.app/"
+              className='displayWebsite portfolioBtn biggerFont'
+              target='blank'
+              href='https://wbba.netlify.app/'
             >
               App Website
             </a>
-            <a className="displayCode portfolioBtn biggerFont">
+            <a className='displayCode portfolioBtn biggerFont'>
               non public &#x21;
             </a>
             <Link
-              to="/portfolio/webbrain"
-              className="portfolioBtn displayDetails biggerFont"
+              to='/portfolio/webbrain'
+              className='portfolioBtn displayDetails biggerFont'
             >
               Project Details
             </Link>
             <img
-              className="imgPortf"
+              className='imgPortf'
               src={Webbrain}
-              alt="hotel reservation site"
+              alt='hotel reservation site'
             />
           </div>
-          <div className="imgParent">
+          <div className='imgParent'>
             <a
-              className="displayWebsite portfolioBtn biggerFont"
-              target="blank"
-              href="https://bill-hotel-site.netlify.app/"
+              className='displayWebsite portfolioBtn biggerFont'
+              target='blank'
+              href='https://bill-hotel-site.netlify.app/'
             >
               App Website
             </a>
             <a
-              className="displayCode portfolioBtn biggerFont"
-              target="blank"
-              href="https://github.com/Bill0197/hotel-reservation"
+              className='displayCode portfolioBtn biggerFont'
+              target='blank'
+              href='https://github.com/Bill0197/hotel-reservation'
             >
               Source Code
             </a>
             <Link
-              to="/portfolio/hotel"
-              className="portfolioBtn displayDetails biggerFont"
+              to='/portfolio/hotel'
+              className='portfolioBtn displayDetails biggerFont'
             >
               Project Details
             </Link>
             <img
-              className="imgPortf"
+              className='imgPortf'
               src={Hotel}
-              alt="hotel reservation site"
+              alt='hotel reservation site'
             />
           </div>
-          <div className="imgParent">
+          <div className='imgParent'>
             <a
-              className="displayWebsite portfolioBtn biggerFont"
-              target="blank"
-              href="https://khabibullosaydullaev.netlify.app/"
+              className='displayWebsite portfolioBtn biggerFont'
+              target='blank'
+              href='https://khabibullosaydullaev.netlify.app/'
             >
               App Website
             </a>
             <a
-              className="displayCode portfolioBtn biggerFont"
-              target="blank"
-              href="https://github.com/Bill0197/bootstrap-the-updated-one"
+              className='displayCode portfolioBtn biggerFont'
+              target='blank'
+              href='https://github.com/Bill0197/bootstrap-the-updated-one'
             >
               Source Code
             </a>
             <Link
-              to="/portfolio/bootstrap"
-              className="portfolioBtn displayDetails biggerFont"
+              to='/portfolio/bootstrap'
+              className='portfolioBtn displayDetails biggerFont'
             >
               Project Details
             </Link>
             <img
-              className="imgPortf"
+              className='imgPortf'
               src={Bootstrap}
-              alt="portfolio site with bootstrap"
+              alt='portfolio site with bootstrap'
             />
           </div>
-          <div className="imgParent">
+          <div className='imgParent'>
             <a
-              className="displayWebsite portfolioBtn biggerFont"
-              target="blank"
-              href="https://bill-budget.netlify.app/"
+              className='displayWebsite portfolioBtn biggerFont'
+              target='blank'
+              href='https://bill-budget.netlify.app/'
             >
               App Website
             </a>
             <a
-              className="displayCode portfolioBtn biggerFont"
-              target="blank"
-              href="https://github.com/Bill0197/bill-budget"
+              className='displayCode portfolioBtn biggerFont'
+              target='blank'
+              href='https://github.com/Bill0197/bill-budget'
             >
               Source Code
             </a>
             <Link
-              to="/portfolio/budget"
-              className="portfolioBtn displayDetails biggerFont"
+              to='/portfolio/budget'
+              className='portfolioBtn displayDetails biggerFont'
             >
               Project Details
             </Link>
-            <img className="imgPortf" src={Budget} alt="budget site" />
+            <img className='imgPortf' src={Budget} alt='budget site' />
           </div>
         </div>
       </section>
       {!display && (
-        <div className="fullWidth">
-          <Link to="/" className="center bannerBtn">
+        <div className='fullWidth'>
+          <Link to='/' className='center bannerBtn'>
             back to home
           </Link>
         </div>
       )}
       {!display && <Footer />}
     </>
-  )
+  );
 }
